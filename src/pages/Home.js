@@ -45,9 +45,9 @@ const Home = () => {
               {" "}
               <span class="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
                 <ul class="block animate-text-slide-2 text-left leading-tight [&_li]:block">
-                  <li>Full-stack Devloper</li>
-                  <li>Front-end Devloper</li>
-                  <li aria-hidden="true">Back-end Devloper</li>
+                  <li>Full-stack Developer</li>
+                  <li>Front-end Developer</li>
+                  <li aria-hidden="true">Back-end Developer</li>
                 </ul>
               </span>
             </div>{" "}
