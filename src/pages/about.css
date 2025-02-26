@@ -7,3 +7,78 @@
   position: relative;
   left: 50px; /* Moves each box 30px to the right */
 }
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-7xl {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .ml-16 {
+    margin-left: 0;
+  }
+
+  .mr-56 {
+    margin-right: 0;
+  }
+
+  .mt-32 {
+    margin-top: 20px;
+  }
+
+  .m-5 {
+    margin: 20px;
+  }
+
+  .ml-36 {
+    margin-left: 0;
+  }
+
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  .flex.justify-center {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .grid-cols-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .w-64 {
+    width: 90%;
+  }
+
+  .h-48 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  .p-5 {
+    padding: 10px;
+  }
+
+  .text-wrapper {
+    text-align: center;
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+  }
+}
