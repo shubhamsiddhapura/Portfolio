@@ -10,7 +10,7 @@ const NavBar = () => {
   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   return (
-    <div className="flex flex-col md:flex-row justify-between p-5 bg-white shadow-md">
+    <div className="flex flex-col justify-between p-5 bg-white shadow-md md:flex-row">
       {/* Logo Section */}
       <Link to="/">
         <img 
@@ -23,8 +23,8 @@ const NavBar = () => {
       </Link>
 
       {/* Navigation Links */}
-      <nav className="flex flex-col md:flex-row items-center md:items-start">
-        <ul className="flex flex-col md:flex-row gap-5 md:gap-7 text-xl md:text-2xl font-bold font-sans text-blue-500 mt-4 md:mt-0">
+      <nav className="flex flex-col items-center md:flex-row md:items-start">
+        <ul className="flex flex-col gap-5 pt-2 mt-4 text-xl font-bold text-blue-500 md:flex-row md:gap-7 md:text-2xl md:mt-0">
           <li className="hover-underline-animation hover:text-black">
             <Link to="/">Home</Link>
           </li>
@@ -38,9 +38,9 @@ const NavBar = () => {
       </nav>
 
       {/* Contact Button */}
-      <div className="flex justify-center md:justify-end mt-4 md:mt-0">
+      <div className="flex justify-center pt-2 mt-4 md:justify-end md:mt-0">
         <a href={mailtoLink}>
-          <button className="text-xl md:text-2xl font-bold text-blue-500 hover:text-black hover-underline-animation">
+          <button className="text-xl font-bold text-blue-500 md:text-2xl hover:text-black hover-underline-animation">
             Contact me!
           </button>
         </a>

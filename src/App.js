@@ -19,7 +19,8 @@ const App = () => {
         <Route path="About" element={<About />} />
         <Route path="/" element={<Home/>}/>
       </Routes>
-
+        
+        < Footer/>
 
     </div>
   );

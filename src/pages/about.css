@@ -1,36 +1,9 @@
-/* Define the movement animation */
-@keyframes moveRightThenLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(100vw);
-  }
-  50% {
-    transform: translateX(100vw);
-  }
-  75% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-/* Box styling for images */
 .box {
-  width: 150px; /* Adjust the width of images */
-  height: 150px; /* Adjust the height of images */
-  margin: 10px;
-  animation: moveRightThenLeft 20s linear infinite; /* Increased the duration to 20 seconds for slower transition */
-  display: inline-block;
-  padding-top: 1rem;
-}
-
-/* Transition container styling */
-.transition {
-  overflow: hidden; /* Hide images as they move out of view */
-  height: 150px; /* Adjust to fit the size of images */
+  width: 120px;
+  height: 120px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgb(255, 255, 255);
   position: relative;
-   /* Allow the container to stretch the full width of the screen */
+  left: 50px; /* Moves each box 30px to the right */
 }

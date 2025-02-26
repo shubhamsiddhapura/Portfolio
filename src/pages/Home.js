@@ -5,9 +5,9 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa6";
 import pdf from "../assesment/shubh.pdf";
 import { FaHandPeace } from "react-icons/fa6";
-import "../pages/Home.css"
+import "../pages/Home.css";
 import Project from "./Project";
-import About from './About'
+import About from "./About";
 
 const Home = () => {
   const email = "shubhs2844@gmail.com";
@@ -18,63 +18,61 @@ const Home = () => {
     subject
   )}&body=${encodeURIComponent(body)}`;
   return (
-    <div className=" ">
-      <div className=" mb-20 flex ml-16 ">
+    <div>
+    <div className="flex flex-col items-center w-full pt-20 pb-20 pl-10 bg-black px-14 md:px-10 lg:px-20">
+      
+      <div className="flex flex-col items-center justify-center pl-10 mb-10 md:flex-row">
         <img
           src={profile}
           alt="profile"
           height={620}
           width={620}
-          className=" rounded-full pl-40 pr-32 pt-16"
+          className="max-w-xs pl-5 rounded-full sm:max-w-md md:pl-8 md:pr-8"
         />
-        <ul>
-          <li className="  pl-1 pt-20 text-6xl font-bold text-blue-600 leading-20 font-mono">
-            <div className=" flex flex-row gap-1">
-              {" "}
+        <ul className="mt-8 text-center md:text-left md:mt-0 md:ml-10">
+          <li className="text-4xl font-bold leading-tight text-blue-600 md:text-6xl">
+            <div className="flex items-center justify-center gap-2 md:justify-start">
               HI
-              <FaHandPeace className="  text-yellow-600 text-5xl mt-1 " />,
+              <FaHandPeace className="text-4xl text-yellow-600 md:text-5xl" />
             </div>
             I AM
             <li>SHUBHAM</li>
-            <li className=" pl-0 font-bold leading-20">SIDDHAPURA</li>
+            <li className="font-bold">SIDDHAPURA</li>
           </li>
 
-          <li className=" bg-gradient-to-r from-pink-500 via-green-500 to-violet-500 bg-clip-text text-transparent  pl-1 font-bold text-lg">
+          <li className="mt-4 text-base font-bold text-transparent bg-gradient-to-r from-pink-500 via-green-500 to-violet-500 bg-clip-text md:text-lg">
             I am{" "}
-            <div class="font-extrabold text-3xl md:text-4xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">
-              {" "}
-              <span class="text-indigo-500 inline-flex flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden">
-                <ul class="block animate-text-slide-2 text-left leading-tight [&_li]:block">
-                  <li>Full-stack Developer</li>
-                  <li>Front-end Developer</li>
-                  <li aria-hidden="true">Back-end Developer</li>
-                </ul>
-              </span>
-            </div>{" "}
+                    <div className="text-wrapper">
+              <ul className="animate-text-slide">
+              <li>Full-stack Developer</li>
+              
+              </ul>
+              </div>
+
             passionate about building accessible
-            <li>and user friendly Website.</li>
+            <li>and user-friendly Websites.</li>
           </li>
 
-          <li className=" pl-0 mt-1 space-x-2">
+          <li className="mt-4 space-x-2">
             <a href={mailtoLink}>
-              <button className="  bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full">
+              <button className="px-4 py-2 font-bold text-white bg-blue-600 rounded-full hover:bg-blue-400">
                 Hire me!
               </button>
             </a>
             <a href={pdf}>
-              <button className="  bg-blue-600 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-full">
+              <button className="px-4 py-2 font-bold text-white bg-blue-600 rounded-full hover:bg-blue-400">
                 Resume
               </button>
             </a>
           </li>
 
-          <li className="flex gap-3">
+          <li className="flex justify-center gap-3 mt-6 md:justify-start">
             <a
               href="https://github.com/shubhamsiddhapura"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TbBrandGithub className=" mt-3 bg-white size-8 rounded-full" />
+              <TbBrandGithub className="p-1 text-3xl bg-white rounded-full" />
             </a>
 
             <a
@@ -82,7 +80,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TiSocialLinkedin className=" mt-3 bg-white size-8 rounded-full" />
+              <TiSocialLinkedin className="p-1 text-3xl bg-white rounded-full" />
             </a>
 
             <a
@@ -90,14 +88,15 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className=" mt-3 bg-white size-8 rounded-full" />
+              <FaInstagram className="p-1 text-3xl bg-white rounded-full" />
             </a>
           </li>
         </ul>
       </div>
 
-    <About/>
-    <Project/>
+      <About />
+      <Project />
+    </div>
     </div>
   );
 };
